@@ -4,6 +4,7 @@
     --txt-color: black;
     --bg-color: #dfdfdf;
     --fieldset-color: #f1f1f1;
+    --fieldset-shadow: 0px 2px 10px #5f5f5f53;
     --accent-color: #fe700b;
     --accent-color-2: #f46f5a;
     --content-padding: 50px;
@@ -17,7 +18,8 @@
 :root.dark {
     --txt-color: white;
     --bg-color: #1f1736;
-    --fieldset-color: #191426;
+    --fieldset-color: #24193f;
+    --fieldset-shadow: none;
     --accent-color: #6416ff;
     --accent-color-2: #6955d9;
     --content-padding: 50px;
@@ -26,6 +28,7 @@
     --aside-bg: url('./img/aside-dark.jpg');
     --img-bar-color: #e7e0e09d;
     --img-bar-text: white;
+    
 }
 
 body {
@@ -91,7 +94,7 @@ fieldset {
     padding-right: 250px;
     background: var(--fieldset-color);
     border: none;
-    box-shadow: 0px 2px 10px #5f5f5f53;
+    box-shadow: var(--fieldset-shadow);
 }
 
 legend {
