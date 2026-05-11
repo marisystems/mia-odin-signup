@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'FuturaRenner';
+    src: url('FuturaRenner-Light.woff2') format('woff2'),
+        url('FuturaRenner-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaRenner';
+    src: url('FuturaRenner-Regular.woff2') format('woff2'),
+        url('FuturaRenner-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse.woff2') format('woff2'),
+    url('Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.woff2') format('woff2'),
+    url('Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
