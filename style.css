@@ -1,23 +1,36 @@
 @import url(./fonts/stylesheet.css);
 
 :root.light {
+    --txt-color: black;
     --bg-color: #dfdfdf;
     --fieldset-color: #f1f1f1;
     --accent-color: #fe700b;
     --accent-color-2: #f46f5a;
     --content-padding: 50px;
+    --tooltip-bg: #3e3d37;
+    --tooltip-txt-color: white;
+    --aside-bg: url('./img/aside-light.jpg');
+    --img-bar-color: #3636369d;
+    --img-bar-text: black;
 }
 
 :root.dark {
-    --bg-color: #9d1616;
-    --fieldset-color: #f1f1f1;
-    --accent-color: #fe700b;
-    --accent-color-2: #f46f5a;
+    --txt-color: white;
+    --bg-color: #1f1736;
+    --fieldset-color: #191426;
+    --accent-color: #6416ff;
+    --accent-color-2: #6955d9;
     --content-padding: 50px;
+    --tooltip-bg: #dddacc;
+    --tooltip-txt-color: black;
+    --aside-bg: url('./img/aside-dark.jpg');
+    --img-bar-color: #e7e0e09d;
+    --img-bar-text: white;
 }
 
 body {
     font-family: "FuturaRenner";
+    color: var(--txt-color);
     font-size: 1.1rem;
 }
 
@@ -38,7 +51,7 @@ aside {
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: url(./img/aside-3.jpg);
+    background-image: var(--aside-bg);
     background-size:cover;
 }
 
@@ -61,9 +74,9 @@ main {
     height: 120px;
 
     font-family: "Norse";
-    color: white;
+    color: --img-bar-text;
     font-size: 2.8rem;
-    background: #3636369d;
+    
 }
 
 fieldset {
@@ -221,8 +234,8 @@ span {
     padding: 10px;
     border-radius: 5px;
     min-width: 200px;
-    background: #3e3d37;
+    background: var(--tooltip-bg);
     font-size: 0.9rem;
-    color: rgb(234, 234, 234);
+    color: var(--tooltip-txt-color);
     z-index: 999;
 }
