@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "futurarennerregular";
+    font-family: "FuturaRenner";
     font-size: 1.1rem;
 }
 
@@ -36,7 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .img-bar {
@@ -62,7 +62,7 @@ fieldset {
     padding: var(--content-padding);
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-right: 300px;
+    padding-right: 250px;
     background: #f1f1f1;
     border: none;
     box-shadow: 0px 2px 10px #5f5f5f53;
@@ -75,12 +75,15 @@ legend {
 }
 
 fieldset div {
-    width: 200px;
+    width: 250px;
     padding: 10px;
 }
 
 input {
     width: 100%;
+    padding: 5px;
+    border: 1px solid #c9c7c7a3;
+    border-radius: 5px;
 }
 
 .text-info,
@@ -89,8 +92,13 @@ input {
 }
 
 button {
-    margin-left: calc(var(--content-padding) + 5px);
+    margin-left: calc(var(--content-padding) + 6px);
     margin-top: 20px;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: var(--accent-color);
 }
 
 .text-info {
