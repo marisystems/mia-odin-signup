@@ -2,7 +2,9 @@
 
 :root {
     --bg-color: #dfdfdf;
+    --fieldset-color: #f1f1f1;
     --accent-color: #fe700b;
+    --accent-color-2: #f46f5a;
     --content-padding: 50px;
 }
 
@@ -26,7 +28,7 @@ aside {
     justify-content: center;
     flex: 0.8;
 
-    background-image: url(./img/aside.jpg);
+    background-image: url(./img/aside-3.jpg);
     background-size:cover;
 }
 
@@ -43,11 +45,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 204px;
     padding: 10px;
     width: 100%;
-    height: 100px;
+    height: 120px;
 
+    font-family: "Norse";
     color: white;
     font-size: 1.3rem;
     background: #3636369d;
@@ -63,7 +66,7 @@ fieldset {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 250px;
-    background: #f1f1f1;
+    background: var(--fieldset-color)   ;
     border: none;
     box-shadow: 0px 2px 10px #5f5f5f53;
 }
@@ -91,7 +94,7 @@ input {
     padding-left: var(--content-padding);
 }
 
-button {
+form button {
     margin-left: calc(var(--content-padding) + 6px);
     margin-top: 20px;
     color: white;
@@ -105,4 +108,39 @@ button {
     font-weight: bold;
     width: 60ch;
     font-size: 1.4rem;
+}
+
+input:required + span {
+    position: relative;
+    left: 170px;
+    top: -70px
+}
+
+input:required +span::after {
+    background: var(--accent-color-2);
+    color: rgb(255, 255, 255);
+    content: "required";
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.text-container {
+    display: flex;
+}
+
+.text-container button {
+    position: relative;
+    background: none;
+    border: none;
+    top: -30px;
+    left: 85px;
+    transition: all 0.3s;
+}
+
+.text-container button:hover {
+    transform: scale(1.2) rotate(45deg);
+}
+
+.accent {
+    color: var(--accent-color);
 }

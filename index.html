@@ -13,21 +13,26 @@
     <div class="wrapper">
         <aside>
             <div class="img-bar">
-                <h2>ODIN</h2>
+                <h2>THEIA</h2>
             </div>
             <p hidden>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/photos/the-golden-gate-bridge-spans-across-the-water-Iwlo4RuPefM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
         </aside>
 
         <main>
             <div class="text-info">
+            <div class="text-container">
                 <p>
-                    This is not a real online service! You know you
-                    need something like this in your life to help
-                    realize your deepest dreams.
-                    Sign up <em>now</em> to get started
+                    Do you have a passion for photography? <span class="accent">Theia</span> is a 
+                    project that aims to archive the history and techniques
+                    of photography. Sign up now to have access now!
                 </p>
-                
-                <p>You <em>know</em> you want to</p>
+                <button>
+                    <img 
+                    src="./img/sun.svg" 
+                    alt="icon of sun"
+                    width="80px">
+                </button>
+            </div>
             </div>
             
             <div>
@@ -36,27 +41,43 @@
                         <legend>Let's do this!</legend>
                         <div>
                             <label for="">First Name</label>
-                            <input type="text">
+                            <input 
+                            type="text"
+                            required>
+                            <span></span>
                         </div>
                         <div>
                             <label for="">Last Name</label>
-                            <input type="text">
+                            <input 
+                            type="text"
+                            required>
+                            <span></span>
                         </div>
                         <div>
                             <label for="">Email</label>
-                            <input type="text">
+                            <input type="email">
                         </div>
                         <div>
                             <label for="">Phone Number</label>
-                            <input type="text">
+                            <input type="tel">
                         </div>
                         <div>
                             <label for="">Password</label>
-                            <input type="text">
+                            <input 
+                            type="password"
+                            minlength="8"
+                            maxlength="20"
+                            required>
+                            <span></span>
                         </div>
                         <div>
                             <label for="">Confirm Password</label>
-                            <input type="text">
+                            <input 
+                            type="password"
+                            minlength="8"
+                            maxlength="20"
+                            required>
+                            <span></span>
                         </div>
                     </fieldset>
                     <button>Sign Up</button>
