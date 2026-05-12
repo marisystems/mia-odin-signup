@@ -5,17 +5,12 @@ function setTheme() {
 }
 
 function changeIcon() {
-    const asideLight = document.querySelector("#aside-light");
-    const asideDark = document.querySelector("#aside-dark");
-
-    if (asideLight.style.opacity == 1) {
-        asideLight.style.opacity = 0;
-        asideDark.style.opacity = 1;
+    const icon = document.querySelector(".theme-toggle img");
+    if (icon.getAttribute('src') === './img/icon-light.svg') {
+        icon.setAttribute('src', './img/icon-dark.svg')
     } else {
-        asideLight.style.opacity = 1;
-        asideDark.style.opacity = 0;
+        icon.setAttribute('src', './img/icon-light.svg')
     }
-
 }
 
 function changeBackground() {
