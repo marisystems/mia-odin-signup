@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="preload"
+         href="./img/aside-light.jpg"
+         as="image"
+         fetchpriority="high"/>
+
+    <link 
+        rel="preload"
+         href="./img/aside-dark.jpg"
+         as="image"
+         fetchpriority="high"/>
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
@@ -12,7 +24,7 @@
 <body>
     <div class="wrapper">
         <aside>
-            <img style="opacity: 1;" id="aside-light" src="./img/aside-light.jpg" alt="">
+            <img rel="preload" style="opacity: 1;" id="aside-light" src="./img/aside-light.jpg" alt="">
             <img style="opacity: 0;" id="aside-dark" src="./img/aside-dark.jpg" alt="">
             <div class="img-bar">
                 <h2>THEIA</h2>
