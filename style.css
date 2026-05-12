@@ -13,6 +13,7 @@
     --aside-bg: url('./img/aside-light.jpg');
     --img-bar-color: #3636369d;
     --img-bar-text: black;
+    --form-invalid-color: rgb(252, 9, 9);
 }
 
 :root.dark {
@@ -28,6 +29,7 @@
     --aside-bg: url('./img/aside-dark.jpg');
     --img-bar-color: #e7e0e09d;
     --img-bar-text: white;
+    --form-invalid-color: rgb(117, 105, 182);
     
 }
 
@@ -47,15 +49,31 @@ p {
 }
 
 aside {
-    background: rgb(146, 156, 184);
+    position: relative;
     display: flex;
     
     flex: 0.8;
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: var(--aside-bg);
-    background-size:cover;
+    /* background-image: var(--aside-bg); */
+    /* background-size:cover; */
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#aside-light {
+    opacity: 1;
+}
+
+#aside-dark {
+    opacity: 0;
 }
 
 main {
@@ -158,7 +176,7 @@ input:required +span::after {
 }
 
 input:invalid {
-    border: 1px solid red;
+    border: 1px solid var(--form-invalid-color);
 }
 
 input:valid + span::after {

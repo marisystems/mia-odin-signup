@@ -5,12 +5,31 @@ function setTheme() {
 }
 
 function changeIcon() {
-    const icon = document.querySelector(".theme-toggle img");
-    if (icon.getAttribute('src') === './img/icon-light.svg') {
-        icon.setAttribute('src', './img/icon-dark.svg')
+    const asideLight = document.querySelector("#aside-light");
+    const asideDark = document.querySelector("#aside-dark");
+
+    if (asideLight.style.opacity == 1) {
+        asideLight.style.opacity = 0;
+        asideDark.style.opacity = 1;
     } else {
-        icon.setAttribute('src', './img/icon-light.svg')
+        asideLight.style.opacity = 1;
+        asideDark.style.opacity = 0;
     }
+
+}
+
+function changeBackground() {
+    const asideLight = document.querySelector("#aside-light");
+    const asideDark = document.querySelector("#aside-dark");
+
+    if (asideLight.style.opacity == 1) {
+        asideLight.style.opacity = 0;
+        asideDark.style.opacity = 1;
+    } else {
+        asideLight.style.opacity = 1;
+        asideDark.style.opacity = 0;
+    }
+
 }
 
 setTheme();
@@ -19,4 +38,3 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
     setTheme();
     changeIcon();
 })
-
