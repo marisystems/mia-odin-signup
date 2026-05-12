@@ -17,19 +17,27 @@ function changeBackground() {
     const asideLight = document.querySelector("#aside-light");
     const asideDark = document.querySelector("#aside-dark");
 
+    const attributionLight = document.querySelector(".credits-light");
+    const attributionDark = document.querySelector(".credits-dark");
+
     if (asideLight.style.opacity == 1) {
         asideLight.style.opacity = 0;
         asideDark.style.opacity = 1;
+
+        attributionLight.style.display = "none";
+        attributionDark.style.display = "block";
     } else {
         asideLight.style.opacity = 1;
         asideDark.style.opacity = 0;
-    }
 
+        attributionLight.style.display = "block";
+        attributionDark.style.display = "none";
+    }
 }
 
 setTheme();
-
 document.querySelector('.theme-toggle').addEventListener('click', () => {
     setTheme();
     changeIcon();
+    changeBackground();
 })

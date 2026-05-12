@@ -14,6 +14,7 @@
     --img-bar-color: #3636369d;
     --img-bar-text: black;
     --form-invalid-color: rgb(252, 9, 9);
+    --img-bg-color: black;
 }
 
 :root.dark {
@@ -30,7 +31,7 @@
     --img-bar-color: #e7e0e09d;
     --img-bar-text: white;
     --form-invalid-color: rgb(117, 105, 182);
-    
+    --img-bg-color: white;
 }
 
 body {
@@ -55,7 +56,6 @@ aside {
     flex: 0.8;
     flex-direction: column;
     justify-content: space-between;
-
     /* background-image: var(--aside-bg); */
     /* background-size:cover; */
 }
@@ -93,7 +93,6 @@ main {
     padding: 10px;
     width: 100%;
     height: 120px;
-
     font-family: "Norse";
     color: --img-bar-text;
     font-size: 2.8rem;
@@ -105,7 +104,6 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    
     padding: var(--content-padding);
     padding-top: 30px;
     padding-bottom: 30px;
@@ -205,12 +203,10 @@ span {
     display: inline-block;
 }
 
-#credits {
-    display: flex;
-    justify-content: center;
-
+.credits {
+    text-align: center;
     font-size: 0.8rem;
-    color: white;
+    color: var(--img-bg-color);
 }
 
 /* Tooltip styling */
